@@ -1,0 +1,19 @@
+{
+  "_id": "SgVz00aaw2bmFiQk",
+  "name": "Encender y apagar luces locales",
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "exportSource": {
+      "world": "trueque",
+      "system": "sandbox",
+      "coreVersion": "0.7.9",
+      "systemVersion": "0.6.3"
+    }
+  },
+  "scope": "global",
+  "command": "canvas.lighting.updateAll({hidden: canvas.lighting.placeables[0].data.hidden == true ? false : true})",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/bed-lamp.svg",
+  "actorIds": []
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "Tp9n2M1zcZAWJ14M",
+  "name": "Encender y apagar luz global",
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "trueque",
+      "system": "sandbox",
+      "coreVersion": "0.7.9",
+      "systemVersion": "0.6.3"
+    }
+  },
+  "scope": "global",
+  "command": "async function main() {\n  if (canvas.scene.data.darkness === 0.0) {\n    await canvas.scene.update({globalLight: false}) // turn global light off\n    canvas.scene.update({darkness: 1.0}, {animateDarkness: true}) // make it night\n  } else {\n    await canvas.scene.update({darkness: 0.0}, {animateDarkness: true}) // make it day \n    await new Promise(resolve => setTimeout(resolve, 10000));\n    canvas.scene.update({globalLight: true}) // turn global light on\n  }\n}\nmain();",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/sunrise.svg",
+  "actorIds": []
+}

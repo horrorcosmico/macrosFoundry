@@ -1,0 +1,22 @@
+{
+  "_id": "mMYYkTsweEBaZyQK",
+  "name": "Generador de escenarios",
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "furnace": {
+      "runAsGM": false
+    },
+    "exportSource": {
+      "world": "trueque",
+      "system": "sandbox",
+      "coreVersion": "0.7.9",
+      "systemVersion": "0.6.3"
+    }
+  },
+  "scope": "global",
+  "command": "let table1 = game.tables.getName(\"1-1 - Impulso inicial\")\nlet table2 = game.tables.getName(\"1-2 - Lugar central\")\nlet table3 = game.tables.getName(\"1-3 - Paisaje\")\nlet table4 = game.tables.getName(\"1-4 - Elemento recurrente\")\nlet table5 = game.tables.getName(\"2 - Rumores\")\nlet table6 = game.tables.getName(\"2 - Rumores\")\nlet table7 = game.tables.getName(\"2 - Rumores\")\nlet table8 = game.tables.getName(\"3-1 - Un simple enemigo desconocido...\")\nlet table9 = game.tables.getName(\"3-2 - ...conducido por una oscura motivación...\")\nlet table10 = game.tables.getName(\"3-3 - ...y que rinde tributo a...\")\nlet table11 = game.tables.getName(\"4-1 - ¿Un amigo inesperado?...\")\nlet table12 = game.tables.getName(\"4-2 - ...con un  carácter...\")\nlet table13 = game.tables.getName(\"4-3 - ...que esconde un secreto para los protagonistas\")\n\nlet roll1 = table1.roll().results[0].text;\nlet roll2 = table2.roll().results[0].text;\nlet roll3 = table3.roll().results[0].text;\nlet roll4 = table4.roll().results[0].text;\nlet roll5 = table5.roll().results[0].text;\nlet roll6 = table6.roll().results[0].text;\nlet roll7 = table7.roll().results[0].text;\nlet roll8 = table8.roll().results[0].text;\nlet roll9 = table9.roll().results[0].text;\nlet roll10 = table10.roll().results[0].text;\nlet roll11 = table11.roll().results[0].text;\nlet roll12 = table12.roll().results[0].text;\nlet roll13 = table13.roll().results[0].text;\n\nlet content = `${roll1}<br> ${roll2}.<br> ${roll3}.<br> Elemento recurrente: ${roll4}.<br> Rumor 1: ${roll5}.<br> Rumor 2: ${roll6}.<br> Rumor 3: ${roll7}.<br> ${roll8}.<br> ${roll9}.<br> ${roll10}.<br> ${roll11}.<br> ${roll12}.<br> ${roll13}`\n\nChatMessage.create({content: content})",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/perspective-dice-six-faces-random.svg",
+  "actorIds": []
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Ficha de pj/pnj",
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "exportSource": {
+      "world": "trueque",
+      "system": "sandbox",
+      "coreVersion": "0.7.9",
+      "systemVersion": "0.6.3"
+    }
+  },
+  "scope": "global",
+  "command": "fromUuid(\"Actor.ho0oFFjyn6b8LeV2\").then(entity => entity.sheet.render(true))",
+  "author": "eUp50nEprJoNBigj",
+  "img": "modules/game-icons-net/blackbackground/swordman.svg",
+  "actorIds": [],
+  "_id": "0D8myuoDEkTwVvBb"
+}
